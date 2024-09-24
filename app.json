@@ -1,24 +1,25 @@
-  {
- "name": "NEWS-WHATSAPP-BOT",  
-    "description": "whatsapp md bot build with nodejs",  
-    "repository": "https://github.com/mrhansamala/News-Whatsapp-Bot",  
-    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"]
-},
-
-    "buildpacks": [  
-      {  
-        "url": "heroku/nodejs"  
-      },  
-      {  
-        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"  
-      },  
-      {  
-        "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"  
-      }  
-    ],  
-     "formation": {  
-          "worker": {  
-              "quantity": 1,  
-              "size": "eco"  
-          }  
-      }  
+{
+  "name": "NEWS-WHATSAPP-BOT",
+  "description": "whatsapp md bot built with nodejs",
+  "repository": "https://github.com/mrhansamala/News-Whatsapp-Bot",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
